@@ -27,7 +27,7 @@ async def link_handler(bot, message):
     link = message.matches[0].group(0)
     try:
         short_link = await get_shortlink(link)
-        await message.reply(f'Here is your Shorten URL 📮\n\n➣ : {short_link}\n\n How to download 👉 https://t.me/c/1778195709/26\n\n♻️ @DVDWOALL', quote=True)
+        await message.reply(f'Here is your Shorten URL 📮\n\n➣ : {short_link}\n\nHow to download 👉 https://t.me/dvdwoall/8\n\n♻️ @DVDWOALL', quote=True)
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
