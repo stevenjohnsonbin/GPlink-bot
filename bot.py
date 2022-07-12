@@ -19,7 +19,7 @@ bot = Client('gplink bot',
 async def start(bot, message):
     await message.reply(
         f"**👋 Hi {message.chat.first_name}!**\n\n"
-        "Oops❗️ You are not Authorized to use me 😐 \n\n══〓══〓══〓══〓══〓══〓══〓══")
+        "Oops❗️ You are not Authorized to use me 😐 \n\n═════ @DVDWO_BACKUP ═════")
 
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
@@ -27,7 +27,7 @@ async def link_handler(bot, message):
     link = message.matches[0].group(0)
     try:
         short_link = await get_shortlink(link)
-        await message.reply(f'Here is your Shorten URL 📮\n\n➣ : {short_link}\n\nHow to download 👉 https://t.me/dvdwoall/8\n\n♻️ @DVDWOALL', quote=True)
+        await message.reply(f'Here is your Shorten URL 📮\n\n➣ : {short_link}\n\nHow to download 👉 https://t.me/dvdwo_backup_2/2\n\n♻️ @DVDWO_BACKUP', quote=True)
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
